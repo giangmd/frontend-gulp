@@ -48,10 +48,6 @@ gulp
 
 ## Built With
 
-* [Webpack](https://webpack.js.org/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Font Awesome](https://fontawesome.com/)
-
 ## Contributing
 
 If you have time and wanna to contribute with me. Please, create a pull request.
@@ -59,17 +55,13 @@ If you have time and wanna to contribute with me. Please, create a pull request.
 ## Versioning
 
 1.0.0
-
-1.1.0
-- Add **html-loader** and **html-webpack-plugin**
-- Change struct html file to *src/index.html* and extends from *src/components* templates
-- Check after run build in *dist/index.html*
+- Init
 
 ## Authors
 
 * **Mai Dong Giang** - *Owner* - [IZWAY Co., Ltd](https://www.izway.vn/)
 
-See also the list of [contributors](https://github.com/giangmd/frontend-webpack/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/giangmd/frontend-gulp/graphs/contributors) who participated in this project.
 
 ## License
 
