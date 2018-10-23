@@ -80,7 +80,7 @@ gulp.task('watch', function() {
 
     gulp.watch('src/scss/**/*.scss', function(event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-        gulp.run('css');
+        gulp.run('sass');
     });
 
     gulp.watch('src/css/**/*.css', function(event) {
