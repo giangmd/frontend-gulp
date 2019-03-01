@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    htmlPartial = require('gulp-html-partial'),
+    fileinclude = require('gulp-file-include'),
+    htmlmin = require('gulp-htmlmin'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    minifyCSS = require('gulp-minify-css'),
+    csso = require('gulp-csso'),
     clean = require('gulp-rimraf'),
     runSequence = require('run-sequence');
 
@@ -18,7 +19,7 @@ gulp.task('sass', function() {
 
     gulp.src('src/scss/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(minifyCSS())
+        .pipe(csso())
         .pipe(concat('style.min.css'))
         .pipe(gulp.dest('dist/css/'));
 });
@@ -31,7 +32,7 @@ gulp.task('css', function() {
             'node_modules/@fortawesome/fontawesome-free/css/all.css',
             'src/css/**/*.css'
         ])
-        .pipe(minifyCSS())
+        .pipe(csso())
         .pipe(concat('lib.min.css'))
         .pipe(gulp.dest('dist/css'));
 });
@@ -62,8 +63,13 @@ gulp.task('html', function () {
     console.log("HTML task run");
 
     gulp.src(['src/*.html'])
-        .pipe(htmlPartial({
-            basePath: 'src/partials/'
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: 'src/partials'
+        }))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true
         }))
         .pipe(gulp.dest('dist'));
 });

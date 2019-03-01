@@ -1,6 +1,5 @@
-<partial src="_head.html" title="IZWAY Frontend Gulp"></partial>
-
-<partial src="_header.html"></partial>
+@@include('./_head.html', {"title": "This is title Demo"})
+@@include('./_header.html')
 
 <section class="container">
     <h2>This is content</h2>
@@ -8,4 +7,4 @@
     <button class="click-me">CLICK ME</button>
 </section>
 
-<partial src="_footer.html"></partial>
+@@include('./_footer.html')
