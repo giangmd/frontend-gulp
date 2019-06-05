@@ -19,7 +19,7 @@ node && npm
 Clone this project from git
 
 ```
-git clone https://github.com/giangmd/frontend-gulp.git your-project
+git clone https://github.com/giangmd/frontend-gulp.git **your-project-name**
 ```
 
 Run install package
@@ -54,8 +54,11 @@ If you have time and wanna to contribute with me. Please, create a pull request.
 
 ## Versioning
 
-1.0.0
+1.0
 - Init
+
+1.1
+- Upgrade to gulp version 4
 
 ## Authors
 
@@ -69,6 +72,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
+* Javascript, HTML, CSS, SASS,...
+* ES6 style
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
