@@ -1,6 +1,6 @@
 # Front end structure with gulp
 
-A basic front end structure using gulp. Help you save many time in the first time working with gulp
+A Front end working space using Gulp. Help you save a lot of times to set up.
 
 ## Getting Started
 
@@ -28,22 +28,14 @@ Run install package
 npm install
 ```
 
-Run build gulp for development
+Run build for coding
 ```
 npm run dev
 ```
-or
-```
-gulp watch
-```
 
-Or Run build gulp for build
+Run build for project
 ```
 npm run build
-```
-or 
-```
-gulp
 ```
 
 ## Built With
