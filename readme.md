@@ -62,7 +62,7 @@ If you have time and wanna to contribute with me. Please, create a pull request.
 
 ## Authors
 
-* **Mai Dong Giang** - *Owner* - [IZWAY Co., Ltd](https://www.izway.vn/)
+* **Mai Dong Giang**
 
 See also the list of [contributors](https://github.com/giangmd/frontend-gulp/graphs/contributors) who participated in this project.
 
